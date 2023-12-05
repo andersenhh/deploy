@@ -51,7 +51,7 @@ const UploadBook = () => {
 
     //send data to db
 
-    fetch("http://localhost:5000/upload-book", {
+    fetch("https://deploy-theta-gilt.vercel.app/upload-book", {
       method:"POST",
       headers: {
         "Content-type": "application/json"
