@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/all-books")
+    fetch("https://deploy-theta-gilt.vercel.app/all-books")
       .then((res) => res.json())
       .then((data) => setAllBooks(data));
   }, []);
@@ -13,7 +13,7 @@ const ManageBooks = () => {
   // delete book
   const handleDelete = (id) => {
     // console.log(id);
-    fetch(`http://localhost:5000/book/${id}`,{
+    fetch(`https://deploy-theta-gilt.vercel.app/book/${id}`,{
       method: "DELETE",
     }).then(res => res.json()).then(data => {
       alert("Book is Deleted")
