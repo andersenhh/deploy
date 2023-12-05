@@ -82,7 +82,7 @@ async function run() {
 
     //find by category
 
-    app.get("/api/all-books", async(req,res) => {
+    app.get("/all-books", async(req,res) => {
       let query = {};
       if(req.query?.category) {
           query = {category: req.query.category}
