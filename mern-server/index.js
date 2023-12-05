@@ -9,8 +9,8 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb")    ;
 //middleware
 app.use(cors(
     {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
-        methods: ["POST", "GET"],
+        origin: ["https://deploy-frontend-mu.vercel.app"],
+        methods: ["POST", "GET", "PATCH", "DELETE"],
         credentials: true
     }
 ));
